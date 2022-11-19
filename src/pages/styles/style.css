@@ -203,9 +203,14 @@ select {
 }
 .profile {
   padding: 20px;
-  color: cadetblue;
-  margin-top: 30px;
-  margin-left: 20px;
+  color: white;
+  /* margin-top: 30px;
+  margin-left: 20px; */
+  width: 100%;
+  background-image: url("./home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .logout {
   width: 100px;
