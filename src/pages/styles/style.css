@@ -179,6 +179,7 @@ select {
 }
 .currency {
   margin-left: 20px;
+  margin-top: 20px;
   place-items: center;
   justify-content: center;
 }
@@ -193,4 +194,25 @@ select {
 .Container {
   color: cadetblue;
   margin-left: 20px;
+}
+.welcome {
+  margin-left: 40%;
+  margin-top: 20%;
+  text-align: center;
+  color: cadetblue;
+}
+.profile {
+  padding: 20px;
+  color: cadetblue;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.logout {
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 80px;
+}
+.logoutbutton {
+  background-color: red;
+  color: white;
 }

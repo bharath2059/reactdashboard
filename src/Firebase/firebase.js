@@ -18,6 +18,7 @@ import {
   addDoc,
 } from "firebase/firestore";
 
+// Firebase app details
 const firebaseconfig = {
   apiKey: "AIzaSyB5n24y8URx3AeHPNJESYVkPGNciHQWmaA",
   authDomain: "reactdashboard-6625f.firebaseapp.com",
@@ -28,8 +29,11 @@ const firebaseconfig = {
   measurementId: "G-LEB6ZMXPF4",
 };
 
+// intializing firebase
 const app = initializeApp(firebaseconfig);
+//intializing auth
 const auth = getAuth(app);
+//intializing database
 const db = getFirestore(app);
 const googleProvider = new GoogleAuthProvider();
 const signInWithGoogle = async () => {
@@ -51,6 +55,8 @@ const signInWithGoogle = async () => {
     alert(err.message);
   }
 };
+
+// function for login with email and password
 const logInWithEmailAndPassword = async (email, password) => {
   try {
     const user = await signInWithEmailAndPassword(auth, email, password);
@@ -60,6 +66,8 @@ const logInWithEmailAndPassword = async (email, password) => {
     alert(err.message);
   }
 };
+
+//function for registration with email and password
 const registerWithEmailAndPassword = async (name, email, password) => {
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
@@ -73,11 +81,13 @@ const registerWithEmailAndPassword = async (name, email, password) => {
       authProvider: "local",
       email,
     });
+    alert("your account is created");
   } catch (err) {
     console.error(err);
     alert(err.message);
   }
 };
+//function to reset the password
 const sendPasswordReset = async (email) => {
   try {
     await sendPasswordResetEmail(auth, email);
@@ -87,9 +97,11 @@ const sendPasswordReset = async (email) => {
     alert(err.message);
   }
 };
+// Logout function
 const logout = () => {
   signOut(auth);
 };
+//exporting all the functions.
 export {
   auth,
   db,

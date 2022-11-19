@@ -4,6 +4,7 @@ import "./../styles/style.css";
 import SideNavBar from "../../NavBar/SideNavBar";
 
 const CurrencyConvert = () => {
+  //declaring with variables using UseState
   const [rates, setRates] = useState("");
   const [exchangeRate, setExchangeRate] = useState({});
   const [firstCurrency, setFirstCurrency] = useState(0);
@@ -11,6 +12,8 @@ const CurrencyConvert = () => {
 
   let URL =
     "https://api.exchangeratesapi.io/v1/latest?access_key=6e8202ba3b24f80931a9b44ba11a4a77";
+
+  //function to fetch data from API
   const getData = async () => {
     const data = await axios.get(URL);
     // console.log(data.data);
@@ -19,10 +22,11 @@ const CurrencyConvert = () => {
     // console.log(array);
   };
 
+  // getting the data
   useEffect(() => {
     getData();
   }, []);
-
+  // changing the currency
   useEffect(() => {
     console.log(firstCurrency, secondCurrency);
     let result = firstCurrency / secondCurrency;

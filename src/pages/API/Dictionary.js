@@ -3,6 +3,7 @@ import SideNavBar from "../../NavBar/SideNavBar";
 import "./../styles/style.css";
 
 const Dictionary = () => {
+  //declaring the variables using useState
   const [input, onChangeInput] = useState("");
   const [def, setDef] = useState("");
   const [example, setExample] = useState("");
@@ -10,6 +11,7 @@ const Dictionary = () => {
   const URL = "https://api.dictionaryapi.dev/api/v2/entries/en/";
 
   async function getWordDefination() {
+    //fetching the data and catching the errors
     try {
       if (input.length > 0) {
         const EndURl = URL + input;

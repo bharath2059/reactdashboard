@@ -10,6 +10,8 @@ function SignUp() {
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
   const [user, loading, error] = useAuthState(auth);
+
+  //function to check the user inputs and registration.
   const register = () => {
     if (!name) {
       alert("Please enter name");
@@ -24,7 +26,6 @@ function SignUp() {
       return;
     }
     registerWithEmailAndPassword(name, email, password);
-    alert("congratulations, your account is created");
   };
   return (
     <>

@@ -12,7 +12,7 @@ import Weather from "./pages/API/Weather";
 import Caluculator from "./pages/Tools/calculator";
 
 import ReactCalendar from "./pages/Tools/calendar";
-
+import ProfilePage from "./pages/ProfilePage";
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +28,7 @@ function App() {
           <Route path="Weather" element={<Weather />} />
           <Route path="calculator" element={<Caluculator />} />
           <Route path="Checklist" element={<ReactCalendar />} />
+          <Route path="Profile" element={<ProfilePage />} />
         </Routes>
       </div>
     </BrowserRouter>
