@@ -10,7 +10,7 @@ import "./styles/style.css";
 const Dashboard = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
-
+  //getting the user details
   useEffect(() => {
     let user = auth.currentUser;
     console.log(user);
@@ -18,7 +18,7 @@ const Dashboard = () => {
       setName(user.displayName);
     }
   }, []);
-
+  //function to logout
   function doLogout() {
     logout();
     navigate("/");

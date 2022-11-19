@@ -4,6 +4,7 @@ import SideNavBar from "../../NavBar/SideNavBar";
 import "./../styles/style.css";
 
 const Weather = () => {
+  //declaring the variables using UseState
   const [latitude, setLatitude] = useState("");
   const [longitude, setLongitude] = useState("");
   const [city, setCity] = useState("");
@@ -16,6 +17,8 @@ const Weather = () => {
     timeout: 5000,
     maximumAge: 0,
   };
+
+  //function to get coordinates of a user and fetch location.
   function success(pos) {
     console.log("hello");
     var crd = pos.coords;
@@ -30,6 +33,7 @@ const Weather = () => {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
 
+  //function to fetch the weather.
   async function getWeather() {
     console.log("came here");
     const URL = "https://weatherdbi.herokuapp.com/data/weather/";
@@ -48,7 +52,7 @@ const Weather = () => {
       console.log("error while connecting to Weather Api");
     }
   }
-
+  // class to get location of a user using geoloaction.
   class GeoLocation extends Component {
     componentDidMount() {
       if (navigator.geolocation) {

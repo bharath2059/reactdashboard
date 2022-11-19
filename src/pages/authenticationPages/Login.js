@@ -1,17 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth, logInWithEmailAndPassword } from "./../../Firebase/firebase";
-import { useAuthState } from "react-firebase-hooks/auth";
-import "./../styles/style.css";
-import Dashboard from "../Dashboard";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const [user, loading, error] = useAuthState(auth);
 
   const navigate = useNavigate();
 
+  // function to check the inputs and login the user
   async function doLogin() {
     if (!email) {
       alert("please enter email");
