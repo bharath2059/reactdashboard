@@ -1,0 +1,196 @@
+.SignUpForm {
+  height: 100%;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Label {
+  font-size: medium;
+  margin: 10px;
+}
+input {
+  width: 80%;
+  height: 20px;
+  margin-left: 10px;
+}
+.card {
+  width: 50vw;
+  height: auto;
+  background-color: aquamarine;
+  align-items: stretch;
+  justify-content: center;
+  border: 20px;
+}
+.Header {
+  width: 100%;
+  height: 100%;
+  margin: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#LoginButton {
+  width: 100px;
+  height: 30px;
+  margin-top: 5%;
+  margin-right: 10%;
+}
+.Button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 30%;
+}
+@media (min-width: 760px) {
+  input {
+    width: 50%;
+    height: 20px;
+    margin-left: 10px;
+  }
+  .card {
+    width: 30vw;
+    height: auto;
+    background-color: aquamarine;
+    align-items: stretch;
+    justify-content: center;
+  }
+}
+
+.Header1 {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100vh;
+  flex-wrap: wrap;
+}
+.Body {
+  margin-left: 50px;
+  color: cadetblue;
+}
+h2 {
+  font-size: 170px;
+  color: cadetblue;
+}
+.inputText {
+  width: 200px;
+  height: 30px;
+  font-size: 20px;
+
+  margin: 20px;
+}
+.Check {
+  width: 150px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  background-color: greenyellow;
+  border-radius: 20px;
+}
+select {
+  margin: 20px;
+  padding: 5px;
+}
+
+.CurrencyConverter {
+  width: 50vw;
+  height: 100vh;
+  display: block;
+  float: left;
+}
+.Navar {
+  text-align: center;
+  justify-content: center;
+}
+.sideNavBar {
+  height: 100vh;
+  width: 300px;
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+}
+.sideNavBarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+.sideNavBarList .row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  color: darkblue;
+  justify-content: center;
+  align-items: center;
+}
+.sideNavBarList .row:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+.sideNavBarList #active {
+  background-color: aquamarine;
+}
+.row #Logo {
+  flex: 30%;
+  display: grid;
+  place-items: center;
+}
+.row #title {
+  flex: 70%;
+}
+.Navbar {
+  background-color: darkblue;
+  height: 50px;
+  width: 100vw;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  place-items: center;
+  font-weight: 600;
+}
+.Dictionary {
+  width: 50%;
+  margin: 30px;
+  color: cadetblue;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.calci {
+  width: 30vw;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+#assignment {
+  margin: 5px;
+}
+.currency {
+  margin-left: 20px;
+  place-items: center;
+  justify-content: center;
+}
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cadetblue;
+  width: 100%;
+  height: 100%;
+}
+.Container {
+  color: cadetblue;
+  margin-left: 20px;
+}
