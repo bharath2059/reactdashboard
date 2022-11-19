@@ -37,4 +37,9 @@ export const SideNavBarData = [
     Link: "/Checklist",
     Logo: <FactCheckIcon />,
   },
+  {
+    title: "Profile",
+    Link: "/Profile",
+    Logo: <FactCheckIcon />,
+  },
 ];
