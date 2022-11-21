@@ -9,6 +9,14 @@ const ProfilePage = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+
+  //to check whether user is logged in or not.
+  useEffect(() => {
+    let user = auth.currentUser;
+    if (!user) {
+      return navigate("/");
+    }
+  }, []);
   useEffect(() => {
     let user = auth.currentUser;
     console.log(user);

@@ -10,6 +10,13 @@ import "./styles/style.css";
 const Dashboard = () => {
   const navigate = useNavigate();
   const [name, setName] = useState("");
+  // to check whether user is logged in or not.
+  useEffect(() => {
+    let user = auth.currentUser;
+    if (!user) {
+      return navigate("/");
+    }
+  }, []);
   //getting the user details
   useEffect(() => {
     let user = auth.currentUser;

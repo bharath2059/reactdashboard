@@ -72,13 +72,13 @@ function SignUp() {
           <br />
           <div className="Button">
             <button onClick={register}>Register</button>
-            <p
+            <button
               onClick={() => {
-                Navigate("/");
+                window.location.pathname = "/";
               }}
             >
               Already have an Account?
-            </p>
+            </button>
           </div>
         </div>
       </div>
